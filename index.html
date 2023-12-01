@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
-  </head>
-  <body>
-    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <script src="./bootstrap.js"></script>
-  </body>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIXZA TEST</title>
+    <link rel="stylesheet" href="index.css">
+    <link data="agent_file/agent_set1.txt" type="text/plain">
+    <!-- <style type="zixza_test.css"></style> -->
+</head>
+<body>
+    
+    <button onclick="plvspl()" value="0" id="plvspl">人ｖｓ人</button>
+
+    <script>
+        function plvspl() {
+            // 入力フィールドの値を取得
+            var dataValue = document.getElementById('plvspl').value;
+            // 次のページにリダイレクト
+            window.location.href = 'game.html?data=' + encodeURIComponent(dataValue);
+        }
+    </script>
+</body>
 </html>
